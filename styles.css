@@ -10,6 +10,15 @@
 body { /* resets all margin and padding */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+.cursive {
+    font-family: 'La Belle Aurore';
+}
+
+.oswald {
+    font-family: 'Oswald';
 }
 
 .navbar {
@@ -60,4 +69,104 @@ body { /* resets all margin and padding */
     margin-right: 15px;
 }
 
-/* CSS above is for the navigation bar */
+/* CSS specific for navigation bar */
+
+
+/* CSS specific for Contact Page */
+
+.contactBody {
+    background-image: url('images/greenBackground.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #f5f5f5;
+}
+
+.contactContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.contactContainer h1 {
+    font-size: 4em;
+    padding: 0;
+    margin-top: 10vh;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.contactContainer h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald';
+}
+
+button {
+    border: none;
+    background-color: #937B63;
+    padding: 10px 40px 10px 40px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow:
+    0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgba(147, 123, 99, 0.5);
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #D9D9D9;
+    box-shadow:
+    0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    height: 10vh;
+    background-color: #D9D9D9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:
+    0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-size: 20px;
+}
+
+.small {
+    max-width: 20vw;
+}
+
+.pug {
+    position: absolute;
+    bottom: 45px;
+    right: -70px;
+    transform: rotate(-45deg);
+}
+
+.frenchie {
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    transform: rotate(30deg);
+}
+
+/* End Contact Page Specific CSS */
