@@ -7,10 +7,14 @@
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 
+/* GENERAL STYLES */
+
 body { /* resets all margin and padding */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #f5f5f5;
+
 }
 
 .cursive {
@@ -20,6 +24,33 @@ body { /* resets all margin and padding */
 .oswald {
     font-family: 'Oswald';
 }
+
+button {
+    border: none;
+    background-color: #937B63;
+    padding: 10px 40px 10px 40px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow:
+    0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgba(147, 123, 99, 0.5);
+    cursor: pointer;
+}
+
+.small {
+    max-width: 20vw;
+}
+
+/* END GENERAL STYLES */
+
+/* CSS specific for navbar */
 
 .navbar {
     font-family: 'La Belle Aurore';
@@ -69,7 +100,160 @@ body { /* resets all margin and padding */
     margin-right: 15px;
 }
 
-/* CSS specific for navigation bar */
+/* CSS specific for navbar end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS specific for index page */
+
+.landingPageBody {
+    background-image: url('images/greenBackground.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 85vh;
+    text-align: center;
+    padding-top: 15vh; /* Because of fixed navbar, the padding was a bit off*/
+}
+
+.frontPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    column-gap: 25vw;
+}
+
+.leftSide h1 {
+    font-size: 6em;
+    font-weight: normal;
+}
+
+.leftSide h4 {
+    font-size: 1.5em;
+}
+
+.leftSide h3 {
+    font-size: 2em;
+}
+
+/* Second viewport begin */
+
+.viewportTwo {
+    background-image: url('images/hazelBackground.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.viewportTwo h1 {
+    font-size: 5em;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+}
+
+.card {
+    width: 20vw;
+    height: 55vh;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    box-shadow:
+  0px 20px 80px rgba(0, 0, 0, 0.21)
+;
+}
+
+.card h1 {
+    font-size: 2em;
+    margin-top: 8vh;
+}
+
+.cardDescription {
+    font-size: 14px;
+}
+
+@media screen and  (min-width: 1440px) and (min-height: 1000px){
+    .cardDescription {
+        font-size: 2em;
+    }
+}
+
+
+.cardImage {
+    max-width: 10vw;
+    border-radius: 100%;
+    margin-top: 5vh;
+
+}
+
+
+/* Second viewport end */
+
+
+
+/* End index page CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* CSS specific for Contact Page */
@@ -113,25 +297,6 @@ body { /* resets all margin and padding */
     font-family: 'Oswald';
 }
 
-button {
-    border: none;
-    background-color: #937B63;
-    padding: 10px 40px 10px 40px;
-    border-radius: 15px;
-    transition: 0.3s ease;
-    color: white;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    box-shadow:
-    0px 0px 5px rgba(0, 0, 0, 0.3);
-}
-
-button:hover {
-    background-color: rgba(147, 123, 99, 0.5);
-    cursor: pointer;
-}
-
 input {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #D9D9D9;
@@ -151,9 +316,7 @@ label {
     font-size: 20px;
 }
 
-.small {
-    max-width: 20vw;
-}
+
 
 .pug {
     position: absolute;
