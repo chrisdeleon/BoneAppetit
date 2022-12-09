@@ -107,24 +107,6 @@ button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CSS specific for index page */
 
 .landingPageBody {
@@ -169,7 +151,7 @@ button:hover {
     text-align: center;
 }
 
-.viewportTwo h1 {
+.viewportTitle {
     font-size: 5em;
 }
 
@@ -217,43 +199,47 @@ button:hover {
 
 /* Second viewport end */
 
+/* Third viewport begin */
 
+.viewportThree {
+    background-image: url('images/darkBrownBackground.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 115vh;
+    text-align: center;
+}
 
+.subtitle {
+    margin-bottom: 80px;
+}
+
+.review {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow:
+  0px 20px 80px rgba(0, 0, 0, 0.21);
+    border-radius: 20px;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.reviewImage {
+    border-radius: 20px;
+    max-width: 15vw;
+}
+
+.reviewText {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Third viewport end */
 /* End index page CSS */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* CSS specific for Contact Page */
