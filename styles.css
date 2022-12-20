@@ -53,11 +53,10 @@ button:hover {
 /* CSS specific for navbar */
 
 .navbar {
-    font-family: 'La Belle Aurore';
     margin: 0;
     padding: 0;
     display: flex;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px; /* adds rounding to bottom left and right corners */
     justify-content: center;
     column-gap: 10%;
     align-items: center;
@@ -65,23 +64,22 @@ button:hover {
     font-size: 2.5em;
     text-align: center;
     height: 12vh;
-    position: fixed;
+    position: fixed; /* fixed so that drop down effect functions */
     width: 100%;
-    top: 0;
     transition: top 0.3s; /* transition for the JavaScript scroll effect */
 }
 
-.navbar li {
+.navbarItem {
     list-style-type: none;
 }
 
-.navbar li a {
+.navbarLink {
     text-decoration: none;
     color: black;
     transition: 0.3s ease; /* slight effect for hovering over each navbar link */
 }
 
-.navbar li a:hover {
+.navbarLink:hover {
     text-decoration: underline;
     opacity: 0.5;
 }
@@ -93,7 +91,7 @@ button:hover {
     width: 300px;
 }
 
-.logo {
+.logo { /* for the logo image, if one exists */
     margin-top: 15px;
     max-width: 40px;
     transform: rotate(45deg);
