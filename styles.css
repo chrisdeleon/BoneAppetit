@@ -63,6 +63,7 @@ button:hover {
     background-color: rgba(255, 252, 249, 0.8); /* CD - gave this a bit of opacity so that you can still see through it */ 
     font-size: 2.5em;
     text-align: center;
+    top: 0; /* this ensures the navbar always appears at the top */
     height: 12vh;
     position: fixed; /* fixed so that drop down effect functions */
     width: 100%;
@@ -97,6 +98,53 @@ button:hover {
     transform: rotate(45deg);
     margin-right: 15px;
 }
+
+.navbarMenu {
+    display: none;
+    list-style-type: none;
+}
+
+/* The break-point of this media query permits the logo and brand name to remain in one line instead of two and adds the hamburger menu icon  */
+@media screen and (max-width: 960px) {
+    .navbarItem:not(:first-child){ /* hides all the links except the logo */
+        display: none;
+    }
+
+    .navbarMenu {
+        display: block;
+        margin-right: 120px;
+        border: 1px solid red;
+        min-width: 4vw;
+        transition: 1ms ;
+    }
+
+
+    .navbarMenu:hover {
+        cursor: pointer;
+        opacity: 0.4;
+    }
+
+    .logoContainer { /* resizes fonts and spacing*/
+        font-size: 28px;
+        border: 1px solid green;
+        margin-left: 90px;
+        min-width: 50%; /* on smaller screens, not having this class causes the item to go to two lines instead of one */
+    }
+
+    .logo { /* resizes logo to be similar to font size */
+        max-width: 25px;
+    }
+}
+
+
+/* This media query makes the navbar look good on smaller desktop screens. The default works well with large desktop screens */
+@media screen and (max-width: 1120px) {
+    .navbarItem {
+        font-size: 3vw;
+    }
+}
+
+
 
 /* CSS specific for navbar end */
 
@@ -337,10 +385,7 @@ label {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top:3%;
-    
-    
-    
+    margin-top:3%;  
 }
 
 .col {
@@ -383,7 +428,6 @@ label {
 .price {
     border-radius: 25px;
     background-color: #e7e5db;
-    
 }
 
 .font {
