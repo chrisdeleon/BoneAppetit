@@ -113,11 +113,9 @@ button:hover {
     .navbarMenu {
         display: block;
         margin-right: 120px;
-        border: 1px solid red;
         min-width: 4vw;
-        transition: 1ms ;
+        transition: 0.3s ease;
     }
-
 
     .navbarMenu:hover {
         cursor: pointer;
@@ -126,7 +124,6 @@ button:hover {
 
     .logoContainer { /* resizes fonts and spacing*/
         font-size: 28px;
-        border: 1px solid green;
         margin-left: 90px;
         min-width: 50%; /* on smaller screens, not having this class causes the item to go to two lines instead of one */
     }
@@ -134,7 +131,32 @@ button:hover {
     .logo { /* resizes logo to be similar to font size */
         max-width: 25px;
     }
+
 }
+
+
+/* works with JS to toggle responsive class on and off when the icon is clicked */
+@media screen and (max-width: 960px) {
+    .navbarItem.responsive {
+        position: relative;
+        border: 1px solid red;
+        height: 40px;
+    }
+    .navbarItem.responsive .navbarMenu {
+        right: 0;
+        top: 0;
+        border: 1px solid green;
+
+    }
+
+    .navbarItem.responsive .logoContainer {
+        border: 1px solid green;
+        display: block;
+        text-align: left;
+    }
+}
+
+
 
 
 /* This media query makes the navbar look good on smaller desktop screens. The default works well with large desktop screens */
